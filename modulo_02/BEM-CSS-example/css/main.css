@@ -42,7 +42,7 @@ body {
   font-size: 0.85em;
 }
 
-.card__item--active {
+.card__item.active {
   background: #D4D4D4;
   font-weight: bold;
 }
@@ -53,6 +53,7 @@ body {
   font-size: 1em;
   padding: 0.5em 1em;
   border-radius: 0.5em;
+  border: none;
   cursor: pointer;
 }
 
