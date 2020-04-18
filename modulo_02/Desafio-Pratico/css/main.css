@@ -76,10 +76,13 @@ button {
 	overflow: hidden;
 }
 
+
 .user__profile__pic__style {
+	display: flex;
+	width: 60px;
+	padding: 3px;
+	background: white;
 	border-radius: 100%;
-	border: 2px solid white;
-	display: inline-block;
 	overflow: hidden;
 }
 
@@ -88,8 +91,11 @@ button {
 	width: 100%;
 }
 
-.user__profile__pic.has-new {
-	background: linear-gradient(45deg, rgba(245,160,77,1) 0%, rgba(160,15,139,1) 100%);
+.user__profile__pic--has-new {
+	border-radius: 100%;
+	background: linear-gradient(to bottom, red, #d2a046);
+	padding: 3px 3px 3px 3px;
+	margin-right: 7px;
 }
 
 .stories {
@@ -99,6 +105,12 @@ button {
 	padding: 16px 0;
 }
 
+@media screen and (max-width: 728px) {
+	.stories {
+		padding: 16px;
+	}
+}
+
 .stories__container {
 	align-items: center;
 	display: flex;
@@ -106,7 +118,7 @@ button {
 	width: 100%;
 }
 
-.stories .user__thumb {
+.stories .user__profile__pic {
 	width: 78px;
 	height: 78px;
 	margin: 0 8px;
@@ -114,10 +126,6 @@ button {
 	align-items: center;
 }
 
-.stories .user__thumb__wrapper {
-	height: 72px;
-	width: 72px;
-}
 
 .posts-feed {
 	width: 100%;
@@ -154,7 +162,7 @@ button {
 	align-items: center;
 }
 
-.post__header .user__thumb {
+.post__header .user__profile__pic {
 	height: 40px;
 	margin-right: 8px;
 	width: 40px;
@@ -171,14 +179,14 @@ button {
 	font-size: 1.4rem;
 }
 
-.post__figure {
+.post__img {
 	overflow: hidden;
 	margin: 0;
 	height: auto;
 	width: 100%;
 }
 
-.post__figure img {
+.post__img img {
 	width: 100%;
 }
 
@@ -216,7 +224,7 @@ button {
 	font-size: 1.2rem;
 }
 
-.post__likes .user__thumb {
+.post__likes .user__profile__pic {
 	height: 30px;
 	width: 30px;
 	margin-right: 8px;
