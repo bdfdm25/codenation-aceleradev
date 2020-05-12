@@ -1,0 +1,18 @@
+1 - Deletar a pasta node_modules
+2 - Instalar o jest globalmente com npm i -g jest
+3 - Instalar novamente as dependencias com npm i
+
+4 - Verificar se o seu arquivo jest.config.js se encontra desta forma:
+
+module.exports = {
+  reporters: [
+    'default',
+    [
+      'jest-junit',
+      {
+        includeConsoleOutput: true,
+        outputName: 'output.xml',
+      },
+    ],
+  ],
+}
