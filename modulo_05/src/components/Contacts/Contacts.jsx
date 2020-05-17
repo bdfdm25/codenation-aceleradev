@@ -1,5 +1,6 @@
 import React from "react";
-import Contact from "./Contact";
+import Contact from "../Contact/Contact";
+import './Contacts.scss';
 
 class Contacts extends React.Component {
 
@@ -8,8 +9,8 @@ class Contacts extends React.Component {
     return (
       <>
         <div className="container">
-          <section className="contacts">
-            <article className="contact">
+          <section className="contacts__header">
+            <article className="contact__header">
               <span className="contact__avatar" />
               <span className="contact__data">Nome</span>
               <span className="contact__data">Telefone</span>
